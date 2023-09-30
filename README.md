@@ -1,4 +1,5 @@
 # GraphMaster
+Application to teach graph theory to students.
 
 ## Instructions
 Build a vertices by clicking the place on the panel where you want your vertex to go.
@@ -16,3 +17,6 @@ To build a new graph click "New Graph" in the tool bar.
 ## Coming soon
 - Connectivity features
 - Text panel
+- Move points
+- Delete points
+- Features update with every new click
