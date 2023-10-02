@@ -15,8 +15,9 @@ To Analyze the degrees of each vertex in the graph click  "Find Degree of Each V
 To build a new graph click "New Graph" in the tool bar.
 
 ## Coming soon
-- Connectivity features
+- Connectivity (isKConnected, calculateConnectivity)
 - Text panel
 - Move points
 - Delete points
 - Features update with every new click
+- Show fastest path between two points
