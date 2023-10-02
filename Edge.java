@@ -46,6 +46,19 @@ public class Edge {
     }
 
     /**
+     * Gets the other vertex in the edge
+     * @param v known vertex
+     * @return neighboring vertex
+     */
+    public Vertex getOtherVertex(Vertex v){
+        if (this.head != v) {
+            return this.head;
+        } else {
+            return this.tail;
+        }
+    }
+
+    /**
      * Creates string describing the edge.
      * @return String describing edge
      */

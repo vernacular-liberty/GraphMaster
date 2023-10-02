@@ -5,13 +5,19 @@ public class AnalyzeGraph{
     Graph graph;
     int degree;
     boolean connected;
+    boolean fullyConnected;
+    int connectivity;
+    boolean kConnected;
 
     AnalyzeGraph(Graph graph){
         this.graph = graph;
         this.degree = findDegree();
         this.connected = isConnected();
+        this.fullyConnected = isFullyConnected();
+        this.connectivity = calculateConnectivity();
+        this.kConnected = isKConnected();
     }
-    
+
     /**
      * Finds the number of degrees in a graph
      * @return degrees of vertices
@@ -66,5 +72,32 @@ public class AnalyzeGraph{
             }
         }
         return isVertex;
+    }
+
+    /**
+     * Checks if every vertex is connected to every other vertex.
+     * @return boolean for if the graph is fully connected
+     */
+    public boolean isFullyConnected(){
+        boolean isFullyConnected =false;
+        int nVertices = this.graph.vertices.size();
+        int nEdges = this.graph.edges.size();
+        int edgesIfFullyConnected = nVertices*(nVertices-1)/2;
+
+        if (nEdges == edgesIfFullyConnected) isFullyConnected = true;
+        
+        return isFullyConnected;
+    }
+
+    /*TO DO */
+    public int calculateConnectivity(){
+        int nVertices = this.graph.vertices.size();
+
+        return 0;
+    }
+
+    /*TO DO */
+    public boolean isKConnected(){
+        return false;
     }
 }

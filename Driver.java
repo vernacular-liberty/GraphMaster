@@ -37,9 +37,9 @@ public class Driver {
      * @return a new JFrame object
      */
     private JFrame createFrame() {
-        JFrame frame = new JFrame("Graph Games");
+        JFrame frame = new JFrame("Graph Master");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 500);
+        frame.setSize(800, 600);
         return frame;
     }
 
@@ -67,7 +67,7 @@ public class Driver {
      * @return label with instructions
      */
     public JLabel createLabel(){
-        JLabel label = new JLabel("INSTRUCTIONS: Click to add points.  Drag to make edges.");
+        JLabel label = new JLabel("<html>INSTRUCTIONS: Click to add points.  Drag to make edges. <br>For best result draw graph in the center of the screen.</html>");
         return label;
     }
 
