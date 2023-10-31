@@ -21,3 +21,4 @@ To build a new graph click "New Graph" in the tool bar.
 - Delete points
 - Features update with every new click
 - Show fastest path between two points
+- Label points using letters
